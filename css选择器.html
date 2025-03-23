@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>css选择器</title>
+		<style type="text/css">
+			/*这是标签选择器（优先级最低）*/
+			div{
+				background: green;
+			}
+			/*这是类选择器，可以多次运用（优先级比上面的低）*/
+			.pink{
+				background: pink;
+			}
+			.big{
+				font-size: 20px;
+			}
+			.small{
+				font-size: 14px;
+			}
+			/*id优先级选择器（优先级比上面的高）*/
+			#orange{
+				background: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="index.html">回到首页</a> <br /><br /><br />
+		<div class="pink">这是一个盒子:class="pink"</div>
+		<div><p>这是一个段落1:class="pink"</p></div>
+		<p class="pink">这是一个段落2:div class="pink"</p>
+		<p id="orange" class="pink">这是一个段落3:id="orange" class="pink"</p>
+		<p class="big">这是一个段落4:class="big"</p>
+		<p class="small">这是一个段落5:class="small"</p>
+	</body>
+</html>
